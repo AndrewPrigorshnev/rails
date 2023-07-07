@@ -27,6 +27,7 @@ class ActiveStorage::AttachmentTest < ActiveSupport::TestCase
   end
 
   test "attaching a un-analyzable blob" do
+    puts "TEST TEST"
     blob = create_blob(filename: "blank.txt")
 
     assert_not_predicate blob, :analyzed?
